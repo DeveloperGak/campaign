@@ -1,0 +1,38 @@
+/* @charset "UTF-8"; */
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet');
+
+/*** Reset style ***/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family:'Noto Sans KR', sans-serif;
+	vertical-align: baseline;
+}
+input::placeholder{width:100%; color:#999; margin-left:15px; font-size:0.8rem; font-family: 'Noto Sans KR', sans-serif !important;}
+/*chrome 브라우저 포커스 해제*/
+input:focus,textarea:focus,button:focus{outline:none; box-shadow:none;-webkit-box-shadow:none;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+ol, ul, li {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {table-layout: fixed;width: 100%;border-collapse: collapse;border-spacing: 0;}
+th, td {vertical-align: middle;}
+button {border: none;font-family: 'Noto Sans KR', sans-serif !important;cursor: pointer;}
+a {text-decoration: none;color: inherit;}
+input {border: none;box-sizing: border-box;appearance: none;}
+[type=checkbox],[type=radio] {appearance: auto;}
+[type=text]::-ms-clear,[type=text]::-ms-reveal,[type=search]::-ms-clear,[type=search]::-ms-reveal {display: none;}
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {-webkit-appearance: none;}
+select {-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+button, input, select {vertical-align: top;}
+img {vertical-align: top;}
+iframe {border: none;}
+
+/*css 설정*/
+/*layout*/
+body{font-size:1.8rem; color: #000; width:100%;font-family:'Noto Sans KR', sans-serif;}
+

@@ -1,0 +1,68 @@
+
+/*관리자 등록 레이어팝업*/
+#lp_admin_join{display:none;width:100%; height:100%; position:fixed; top:0; left:0; z-index:100; background: rgba(0,0,0,0.5); }
+#lp_admin_join.on{display:block; }
+#lp_admin_join .lp_header{overflow:hidden;height: 45px;line-height: 45px;padding: 0px 20px; position: relative; border-bottom:1px solid #ddd; }
+#lp_admin_join .lp_header h1{width:70%;font-size:1.1rem; text-align: left; color:#000;}
+#lp_admin_join .lpclose{position:relative;width: 30px; height: 30px; display:block; float:right; cursor: pointer;}
+#lp_admin_join .lpclose span{width:22px; height:2px; position:absolute; top:0; background:#333;}
+#lp_admin_join .lpclose span:nth-of-type(1) {top:-44px; right:-1px;-webkit-transform: translateY (20px) rotate(-45deg); transform: translateY(20px) rotate(-45deg);}
+#lp_admin_join .lpclose span:nth-of-type(2) {top:-4px; right:-1px;-webkit-transform: translateY (-20px) rotate(45deg); transform: translateY(-20px) rotate(45deg);}
+#lp_admin_join .form_wrap{height:204px; padding:20px 22px;}
+#lp_admin_join .form-group{font-size:1.3rem; line-height:40px; width:100%; height:40px; margin:0px 0px 15px; overflow:hidden;}
+#lp_admin_join .form-group label{display:block; width:30%; height:40px; font-weight:600; color:#444; line-height:40px; font-size:1.1rem; float:left; text-align: left;}
+#lp_admin_join .form-group input{display: block; float:left; width:70%;height:40px; padding: 10px; font-size: 1.3rem; line-height: 1.5; color: #333;background-color: #fff; border: 1px solid #ededed;border-radius:3px;}
+#lp_admin_join .form-group input:focus {border-color: #4a9ed8;}
+#lp_admin_join .lp_admin{position:absolute; border-radius:3px; top:50%; left:50%; margin-left:-200px; margin-top:-150px;background:#fff;width:480px; height:355px; text-align:center;}
+#lp_admin_join .lp_admin .lp_pwd_write{padding:8% 8% 0% 8%; font-size:1.3rem; height:148px; line-height:28px;}
+#lp_admin_join .lp_admin .pwdwrite{width:100%; font-size:1.2rem; color:#999; margin:2% 0% 2%;  border:1px solid #d7d7d7; background:#f8f8f8; height:45px; text-align:center;}
+.company_selec{ position:relative; cursor:pointer;  background: url("../img/selec_arrow.png") no-repeat 95% 50%; background-size:13px;width:70%; height:40px; border:1px solid #ededed; font-family:'NanumSquare','Noto Sans KR',sans-serif; padding: 0px 10px; font-size:1.1rem; border-radius:3px;}
+.company_selec option{font-size:1.2rem; cursor:pointer; font-family:'NanumSquare','Noto Sans KR',sans-serif;padding: 0px 10px;}
+.company_selec option:focus{outline:none;}
+.company_selec2{ position:relative; cursor:pointer;  background: url("../img/selec_arrow.png") no-repeat 95% 50%; background-size:13px;width:70%; height:40px; border:1px solid #ededed; font-family:'NanumSquare','Noto Sans KR',sans-serif; padding: 0px 10px; font-size:1.1rem; border-radius:3px;}
+.company_selec2 option{font-size:1.2rem; cursor:pointer; font-family:'NanumSquare','Noto Sans KR',sans-serif;padding: 0px 10px;}
+.company_selec2 option:focus{outline:none;}
+#lp_admin_join .registerbtn{display:block; width:170px; margin:5px auto; border-radius:5px; border:1px solid #1daab3; height:35px; line-height:35px; font-size:1.1rem;  font-weight:700; cursor:pointer; color:#1daab3}
+#lp_admin_join .registerbtn:hover{background:#1daab3; color:#fff;}
+
+/*관리자 수정 레이어팝업*/
+#lp_admin_modify{display:none;width:100%; height:100%; position:fixed; top:0; left:0; z-index:100; background: rgba(0,0,0,0.5); }
+#lp_admin_modify.on{display:block; }
+#lp_admin_modify .lp_header{overflow:hidden;height: 45px;line-height: 45px;padding: 0px 20px; position: relative; border-bottom:1px solid #ddd; }
+#lp_admin_modify .lp_header h1{width:70%;font-size:1.1rem; text-align: left; color:#000;}
+#lp_admin_modify .lpclose_modify{position:relative; margin-top:-39px; width: 30px; height: 30px; display:block; float:right; cursor: pointer;}
+#lp_admin_modify .lpclose_modify span{width:22px; height:2px; position:absolute; top:0; background:#333;}
+#lp_admin_modify .lpclose_modify span:nth-of-type(1) {top:-6px; right:-1px;-webkit-transform: translateY (20px) rotate(-45deg); transform: translateY(20px) rotate(-45deg);}
+#lp_admin_modify .lpclose_modify span:nth-of-type(2) {top:34px; right:-1px;-webkit-transform: translateY (-20px) rotate(45deg); transform: translateY(-20px) rotate(45deg);}
+#lp_admin_modify .lp_admin{position:absolute; border-radius:3px; top:50%; left:50%; margin-left:-200px; margin-top:-150px;background:#fff;width:480px; height:310px; text-align:center;}
+#lp_admin_modify .form_wrap{height:155px; padding:20px 22px;}
+#lp_admin_modify .form-group{font-size:1.3rem; line-height:40px; width:100%; height:40px; margin:0px 0px 15px; overflow:hidden;}
+#lp_admin_modify .form-group label{display:block; width:30%; height:40px; font-weight:600; color:#444; line-height:40px; font-size:1.1rem; float:left; text-align: left;}
+#lp_admin_modify .form-group input{display: block; float:left; width:70%;height:40px; padding: 10px; font-size: 1.3rem; line-height: 1.5; color: #333;background-color: #fff; border: 1px solid #ededed;border-radius:3px;}
+#lp_admin_modify .form-group input:focus {border-color: #4a9ed8;}
+#lp_admin_modify .lp_btn_alert{overflow:hidden; margin-left:14%;}
+#lp_admin_modify .modifybtn{display:block; float:left;width:170px; margin:5px auto; border-radius:5px; border:1px solid #555; height:35px; line-height:35px; font-size:1.1rem;  font-weight:700; cursor:pointer; color:#555; margin-right:15px; }
+#lp_admin_modify .modifybtn:hover{background:#555; color:#fff;}
+#lp_admin_modify .deletebtn{display:block; float:left; width:170px; margin:5px auto; border-radius:5px; border:1px solid #e30000; height:35px; line-height:35px; font-size:1.1rem;  font-weight:700; cursor:pointer; color:#e30000}
+#lp_admin_modify .deletebtn:hover{background:#e30000; color:#fff;}
+
+/*관리자 삭제 레이어팝업*/
+#lp_admin_delete{display:none;width:100%; height:100%; position:fixed; top:0; left:0; z-index:100; background: rgba(0,0,0,0.5); }
+#lp_admin_delete.on{display:block; }
+#lp_admin_delete .lp_admin{position:absolute; border-radius:3px; top:50%; left:50%; margin-left:-200px; margin-top:-80px;background:#fff;width:480px; height:160px; text-align:center;}
+#lp_admin_delete .lp_admin p{height:80px; line-height:80px; font-size:1.3rem;}
+#lp_admin_delete .lp_btn_alert{overflow:hidden; margin-left:14%;}
+#lp_admin_delete .deletebtn_finish{display:block; float:left;width:170px; margin:5px auto; border-radius:5px; border:1px solid #555; height:35px; line-height:35px; font-size:1.1rem;  font-weight:700; cursor:pointer; color:#555; margin-right:15px; }
+#lp_admin_delete .deletebtn_finish:hover{background:#555; color:#fff;}
+#lp_admin_delete .deletebtn_cancel{display:block; float:left; width:170px; margin:5px auto; border-radius:5px; border:1px solid #e30000; height:35px; line-height:35px; font-size:1.1rem;  font-weight:700; cursor:pointer; color:#e30000}
+#lp_admin_delete .deletebtn_cancel:hover{background:#e30000; color:#fff;}
+
+@media (min-width:320px) and (max-width:500px){	
+	#lp_admin_join .lp_admin {width: 365px;margin-left: -184px;}
+	#lp_admin_modify .lp_admin {width: 365px;margin-left: -184px;}
+	#lp_admin_modify .modifybtn {width:130px;}
+	#lp_admin_modify .deletebtn {width:130px;}
+	#lp_admin_delete .lp_admin {width: 365px;margin-left: -184px;}
+	#lp_admin_delete .deletebtn_finish {width:130px;}
+	#lp_admin_delete .deletebtn_cancel {width:130px;}
+}
